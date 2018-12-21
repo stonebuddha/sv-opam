@@ -8,7 +8,7 @@ patches: [
   "rpath.patch"
 ]
 install: [
-  [make "-C" "build" "install"]
+  [make "-C" "build" "install" "-j" jobs]
 ]
 remove: [
   ["ocamlfind" "remove" "Z3"]
